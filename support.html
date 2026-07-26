@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filescrypt — Assistance / Support</title>
+<style>
+  :root {
+    --blue: #3b6fed;
+    --purple: #9147e6;
+    --pink: #ea4fa0;
+    --ink: #1a1a1c;
+    --muted: #6b6b73;
+    --bg: #f5f5f7;
+    --card: #ffffff;
+    --line: #e3e3e8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    padding: 32px 20px 64px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  header { text-align: center; margin-bottom: 30px; }
+  .badge {
+    width: 74px; height: 74px; margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue), var(--purple) 55%, var(--pink));
+    display: flex; align-items: center; justify-content: center;
+  }
+  .badge svg { width: 36px; height: 36px; }
+  h1 { font-size: 30px; letter-spacing: -0.5px; }
+  .sub { color: var(--muted); font-size: 15px; margin-top: 6px; }
+
+  .lang-nav { text-align: center; margin: 20px 0 38px; }
+  .lang-nav a {
+    display: inline-block; margin: 0 6px; padding: 8px 18px;
+    border-radius: 999px; text-decoration: none;
+    background: var(--card); color: var(--blue);
+    font-size: 14px; font-weight: 600;
+    border: 1px solid var(--line);
+  }
+
+  section.doc { margin-bottom: 56px; }
+  h2 {
+    font-size: 22px; margin: 34px 0 14px;
+    padding-bottom: 8px; border-bottom: 2px solid #e8e8ee;
+  }
+
+  .contact-card {
+    background: linear-gradient(135deg, var(--blue), var(--purple) 55%, var(--pink));
+    border-radius: 14px;
+    padding: 22px 24px;
+    color: #fff;
+    margin: 18px 0 8px;
+  }
+  .contact-card h3 { font-size: 17px; margin-bottom: 4px; color: #fff; }
+  .contact-card p { color: rgba(255,255,255,.92); font-size: 15px; }
+  .contact-card a { color: #fff; font-weight: 600; }
+
+  details {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+  }
+  details[open] { border-color: #d5d5de; }
+  summary {
+    font-weight: 600; font-size: 15.5px;
+    cursor: pointer; list-style: none;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+"; color: var(--purple);
+    font-size: 20px; font-weight: 400; line-height: 1;
+  }
+  details[open] summary::after { content: "−"; }
+  details p, details li { font-size: 15px; color: #3a3a42; margin-top: 10px; }
+  details ul { margin: 6px 0 0 20px; }
+  details li { margin-top: 6px; }
+
+  .warn {
+    background: #fff8ec;
+    border-left: 4px solid #e8933a;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 14px 0 4px;
+    font-size: 15px;
+  }
+  .warn strong { color: #b96c13; }
+
+  footer {
+    text-align: center; color: var(--muted);
+    font-size: 13px; margin-top: 48px;
+    padding-top: 22px; border-top: 1px solid var(--line);
+  }
+  a { color: var(--blue); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="10" width="16" height="10" rx="2"></rect>
+        <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+      </svg>
+    </div>
+    <h1>Filescrypt</h1>
+    <p class="sub">Assistance · Support</p>
+  </header>
+
+  <nav class="lang-nav">
+    <a href="#fr">Français</a>
+    <a href="#en">English</a>
+  </nav>
+
+  <!-- ============ FRANÇAIS ============ -->
+  <section class="doc" id="fr">
+    <h2>Assistance</h2>
+
+    <div class="contact-card">
+      <h3>Nous écrire</h3>
+      <p>Une question, un problème, une suggestion ?<br>
+      <a href="mailto:support@filescrypt.com">support@filescrypt.com</a></p>
+    </div>
+    <p class="sub" style="margin-bottom:26px;">Réponse habituelle sous quelques jours ouvrables.</p>
+
+    <h2>Questions fréquentes</h2>
+
+    <details open>
+      <summary>Comment commencer ?</summary>
+      <p>Au premier lancement, appuyez sur <strong>Configurer le coffre</strong>. L'app génère alors votre paire de clés à l'intérieur de la puce sécurisée de l'appareil — une authentification Face ID ou Touch ID vous est demandée, c'est normal.</p>
+      <p>Ensuite, le bouton <strong>+</strong> permet de chiffrer un fichier, et l'icône photo d'en chiffrer une ou plusieurs depuis votre photothèque.</p>
+    </details>
+
+    <details>
+      <summary>Comment échanger des fichiers avec quelqu'un ?</summary>
+      <ul>
+        <li>Chacun envoie sa <strong>clé publique</strong> à l'autre : bouton « Partager ma clé publique », par courriel, pièce jointe ou copier-coller.</li>
+        <li>Chacun importe la clé reçue dans la section <strong>Contacts</strong>, soit depuis le fichier .txt, soit en collant le texte du courriel.</li>
+        <li>Choisissez ensuite le destinataire dans le menu déroulant avant de chiffrer : seul lui pourra ouvrir le résultat.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>J'ai reçu un fichier chiffré — comment l'ouvrir ?</summary>
+      <p>Un fichier reçu doit d'abord entrer dans le coffre. Appuyez sur l'icône <strong>flèche vers le bas</strong> en haut de l'écran et choisissez le fichier .fcrypt ou .txt reçu. Il rejoint alors la liste, où le bouton <strong>Déchiffrer</strong> devient disponible.</p>
+      <p>Si le contenu vous a été transmis sous forme de texte dans un courriel, utilisez plutôt la section « Lire un message reçu » : collez le texte, puis choisissez « Déchiffrer » ou « Déchiffrer et enregistrer comme fichier ».</p>
+    </details>
+
+    <details>
+      <summary>Pourquoi Face ID m'est-il demandé ?</summary>
+      <p>Votre clé privée est enfermée dans le Secure Enclave, une puce dédiée de l'appareil. Elle ne peut être utilisée qu'après une authentification biométrique — c'est ce qui empêche quiconque d'ouvrir vos fichiers, même avec votre appareil en main.</p>
+      <p>Le réglage <strong>Verrouillage automatique</strong> ajoute une demande à chaque retour dans l'app. Vous pouvez le désactiver dans l'onglet Coffre.</p>
+    </details>
+
+    <details>
+      <summary>Que signifie « Binaire » et « Texte Base64 » ?</summary>
+      <ul>
+        <li><strong>Binaire · .fcrypt</strong> — fichier compact, idéal pour l'archivage et l'envoi en pièce jointe.</li>
+        <li><strong>Texte Base64 · .txt</strong> — le contenu chiffré devient du texte, que l'on peut coller directement dans le corps d'un courriel ou d'un message.</li>
+      </ul>
+      <p>Le choix se fait avec le sélecteur en haut de l'onglet Coffre, avant de chiffrer.</p>
+    </details>
+
+    <details>
+      <summary>Puis-je récupérer mes fichiers si je change d'appareil ?</summary>
+      <p><strong>Non.</strong> Les clés privées ne quittent jamais la puce sécurisée et ne figurent dans aucune sauvegarde iCloud ou iTunes. C'est précisément ce qui rend le chiffrement solide — mais cela signifie qu'un fichier chiffré ne peut être ouvert que sur l'appareil qui l'a chiffré.</p>
+      <div class="warn">
+        <strong>Important :</strong> conservez toujours une copie de vos documents importants ailleurs. Un appareil perdu, réinitialisé, ou une modification de votre configuration Face ID / Touch ID rendent les fichiers chiffrés définitivement illisibles.
+      </div>
+    </details>
+
+    <details>
+      <summary>À quoi sert l'identifiant affiché sous ma clé ?</summary>
+      <p>C'est une empreinte courte, dérivée de votre clé publique. Elle permet de vérifier avec votre correspondant — de vive voix, par téléphone ou par un autre canal — que la clé qu'il a reçue est bien la vôtre, et non celle d'un tiers.</p>
+    </details>
+
+    <details>
+      <summary>Mes données sont-elles envoyées quelque part ?</summary>
+      <p>Non. Filescrypt n'utilise aucun serveur, ne crée aucun compte et ne transmet rien sur le réseau. Tout le chiffrement se fait sur l'appareil.</p>
+      <p>Seule exception : si vous utilisez la <strong>dictée vocale</strong>, l'audio peut être traité par le service de reconnaissance vocale d'Apple, comme pour n'importe quelle dictée sur iOS. Écrivez au clavier si vous préférez l'éviter.</p>
+      <p>Voir la <a href="index.html">politique de confidentialité</a>.</p>
+    </details>
+
+    <details>
+      <summary>Sur quels appareils l'app fonctionne-t-elle ?</summary>
+      <p>iPhone et iPad équipés de Face ID ou Touch ID, ainsi que les Mac Apple Silicon disposant de Touch ID. Un appareil sans authentification biométrique configurée ne peut pas générer de clé.</p>
+    </details>
+  </section>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="doc" id="en">
+    <h2>Support</h2>
+
+    <div class="contact-card">
+      <h3>Get in touch</h3>
+      <p>A question, a problem, a suggestion?<br>
+      <a href="mailto:support@filescrypt.com">support@filescrypt.com</a></p>
+    </div>
+    <p class="sub" style="margin-bottom:26px;">Replies usually within a few business days.</p>
+
+    <h2>Frequently asked questions</h2>
+
+    <details open>
+      <summary>How do I get started?</summary>
+      <p>On first launch, tap <strong>Set up vault</strong>. The app generates your key pair inside the device's secure chip — a Face ID or Touch ID prompt appears, which is expected.</p>
+      <p>After that, the <strong>+</strong> button encrypts a file, and the photo icon encrypts one or several photos from your library.</p>
+    </details>
+
+    <details>
+      <summary>How do I exchange files with someone?</summary>
+      <ul>
+        <li>Each person sends their <strong>public key</strong> to the other: use "Share my public key", by email, as an attachment or by copy-paste.</li>
+        <li>Each person imports the received key in the <strong>Contacts</strong> section, either from the .txt file or by pasting the text from the email.</li>
+        <li>Then pick the recipient from the dropdown before encrypting: only they will be able to open the result.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>I received an encrypted file — how do I open it?</summary>
+      <p>A received file must first be brought into the vault. Tap the <strong>down-arrow</strong> icon at the top of the screen and choose the received .fcrypt or .txt file. It joins the list, where the <strong>Decrypt</strong> button becomes available.</p>
+      <p>If the content was sent to you as text inside an email, use the "Read a received message" section instead: paste the text, then choose "Decrypt" or "Decrypt and save as a file".</p>
+    </details>
+
+    <details>
+      <summary>Why am I asked for Face ID?</summary>
+      <p>Your private key is locked inside the Secure Enclave, a dedicated chip in the device. It can only be used after biometric authentication — that's what prevents anyone from opening your files, even with your device in hand.</p>
+      <p>The <strong>Auto-lock</strong> setting adds a prompt every time you return to the app. You can turn it off in the Vault tab.</p>
+    </details>
+
+    <details>
+      <summary>What do "Binary" and "Base64 text" mean?</summary>
+      <ul>
+        <li><strong>Binary · .fcrypt</strong> — a compact file, ideal for archiving and sending as an attachment.</li>
+        <li><strong>Base64 text · .txt</strong> — the encrypted content becomes text, which can be pasted straight into the body of an email or a message.</li>
+      </ul>
+      <p>Choose using the selector at the top of the Vault tab, before encrypting.</p>
+    </details>
+
+    <details>
+      <summary>Can I recover my files if I change devices?</summary>
+      <p><strong>No.</strong> Private keys never leave the secure chip and are not included in any iCloud or iTunes backup. That's exactly what makes the encryption strong — but it also means an encrypted file can only be opened on the device that encrypted it.</p>
+      <div class="warn">
+        <strong>Important:</strong> always keep a copy of important documents elsewhere. A lost or reset device, or a change to your Face ID / Touch ID setup, makes encrypted files permanently unreadable.
+      </div>
+    </details>
+
+    <details>
+      <summary>What is the identifier shown under my key?</summary>
+      <p>It's a short fingerprint derived from your public key. It lets you confirm with your correspondent — out loud, by phone or through another channel — that the key they received is genuinely yours and not a third party's.</p>
+    </details>
+
+    <details>
+      <summary>Is my data sent anywhere?</summary>
+      <p>No. Filescrypt uses no server, creates no account and transmits nothing over the network. All encryption happens on the device.</p>
+      <p>One exception: if you use <strong>voice dictation</strong>, audio may be processed by Apple's speech recognition service, as with any dictation on iOS. Type instead if you prefer to avoid this.</p>
+      <p>See the <a href="index.html">privacy policy</a>.</p>
+    </details>
+
+    <details>
+      <summary>Which devices does the app work on?</summary>
+      <p>iPhone and iPad with Face ID or Touch ID, as well as Apple Silicon Macs that have Touch ID. A device without biometric authentication set up cannot generate a key.</p>
+    </details>
+  </section>
+
+  <footer>
+    Filescrypt · support@filescrypt.com<br>
+    <a href="index.html">Politique de confidentialité · Privacy Policy</a>
+  </footer>
+
+</div>
+</body>
+</html>
