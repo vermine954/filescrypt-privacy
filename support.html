@@ -138,7 +138,15 @@
     <details open>
       <summary>Comment commencer ?</summary>
       <p>Au premier lancement, appuyez sur <strong>Configurer le coffre</strong>. L'app génère alors votre paire de clés à l'intérieur de la puce sécurisée de l'appareil — une authentification Face ID ou Touch ID vous est demandée, c'est normal.</p>
-      <p>Ensuite, le bouton <strong>+</strong> permet de chiffrer un fichier, et l'icône photo d'en chiffrer une ou plusieurs depuis votre photothèque.</p>
+      <p>Ensuite, le bouton <strong>+</strong> permet de chiffrer un fichier, et l'icône photo d'en chiffrer une ou plusieurs depuis votre photothèque. Plusieurs photos sélectionnées ensemble sont regroupées automatiquement en une seule archive avant d'être chiffrées.</p>
+      <p>Chaque fichier du coffre propose ensuite cinq actions :</p>
+      <ul>
+        <li><strong>Œil</strong> — voir le contenu sans l'enregistrer</li>
+        <li><strong>Flèche</strong> — partager le fichier encore chiffré (Mail, Messages…)</li>
+        <li><strong>Dossier</strong> — l'enregistrer ailleurs, toujours chiffré</li>
+        <li><strong>Cadenas ouvert</strong> — le déchiffrer et enregistrer la version en clair</li>
+        <li><strong>Corbeille</strong> — le retirer du coffre</li>
+      </ul>
     </details>
 
     <details>
@@ -152,8 +160,22 @@
 
     <details>
       <summary>J'ai reçu un fichier chiffré — comment l'ouvrir ?</summary>
-      <p>Un fichier reçu doit d'abord entrer dans le coffre. Appuyez sur l'icône <strong>flèche vers le bas</strong> en haut de l'écran et choisissez le fichier .fcrypt ou .txt reçu. Il rejoint alors la liste, où le bouton <strong>Déchiffrer</strong> devient disponible.</p>
-      <p>Si le contenu vous a été transmis sous forme de texte dans un courriel, utilisez plutôt la section « Lire un message reçu » : collez le texte, puis choisissez « Déchiffrer » ou « Déchiffrer et enregistrer comme fichier ».</p>
+      <p><strong>Reçu en pièce jointe :</strong> enregistrez-la d'abord dans Fichiers, puis appuyez sur l'icône <strong>flèche vers le bas</strong> en haut de l'écran de Filescrypt pour l'importer. Le fichier rejoint la liste du coffre, où toutes les actions deviennent disponibles.</p>
+      <p><strong>Reçu sous forme de texte dans le corps d'un courriel :</strong> copiez le texte, puis dans la section « Lire un message reçu », appuyez sur « Coller ». Choisissez ensuite « Déchiffrer le message » s'il s'agit d'un texte, ou « Déchiffrer un fichier ou des photos » dans les autres cas.</p>
+    </details>
+
+    <details>
+      <summary>Puis-je voir une photo sans l'enregistrer ?</summary>
+      <p>Oui. L'icône <strong>œil</strong> à côté d'un fichier du coffre ouvre un aperçu du contenu déchiffré directement dans l'app. Photos, PDF et fichiers texte s'affichent sans jamais être écrits sur l'appareil : le contenu ne vit qu'en mémoire et disparaît dès la fermeture.</p>
+      <ul>
+        <li>Pincez pour agrandir une image, double-tapez pour revenir à la vue d'ensemble.</li>
+        <li>Un lot de photos s'ouvre comme une liste : touchez un élément pour le voir seul.</li>
+        <li>L'aperçu se floute automatiquement dès que l'app passe en arrière-plan, pour qu'il n'apparaisse pas dans le sélecteur d'apps.</li>
+      </ul>
+      <p>Le bouton <strong>Enregistrer</strong> est le seul moyen d'obtenir une copie en clair sur l'appareil.</p>
+      <div class="warn">
+        <strong>À savoir :</strong> iOS ne permet à aucune app d'empêcher les captures d'écran. Si une capture est prise pendant un aperçu, l'image se retrouve non chiffrée dans votre photothèque — Filescrypt vous en avertit, mais ne peut pas l'empêcher.
+      </div>
     </details>
 
     <details>
@@ -213,7 +235,15 @@
     <details open>
       <summary>How do I get started?</summary>
       <p>On first launch, tap <strong>Set up vault</strong>. The app generates your key pair inside the device's secure chip — a Face ID or Touch ID prompt appears, which is expected.</p>
-      <p>After that, the <strong>+</strong> button encrypts a file, and the photo icon encrypts one or several photos from your library.</p>
+      <p>After that, the <strong>+</strong> button encrypts a file, and the photo icon encrypts one or several photos from your library. Several photos selected together are automatically bundled into a single archive before being encrypted.</p>
+      <p>Each file in the vault then offers five actions:</p>
+      <ul>
+        <li><strong>Eye</strong> — view the content without saving it</li>
+        <li><strong>Arrow</strong> — share the file while still encrypted (Mail, Messages…)</li>
+        <li><strong>Folder</strong> — save it elsewhere, still encrypted</li>
+        <li><strong>Open padlock</strong> — decrypt it and save the plain version</li>
+        <li><strong>Bin</strong> — remove it from the vault</li>
+      </ul>
     </details>
 
     <details>
@@ -227,8 +257,22 @@
 
     <details>
       <summary>I received an encrypted file — how do I open it?</summary>
-      <p>A received file must first be brought into the vault. Tap the <strong>down-arrow</strong> icon at the top of the screen and choose the received .fcrypt or .txt file. It joins the list, where the <strong>Decrypt</strong> button becomes available.</p>
-      <p>If the content was sent to you as text inside an email, use the "Read a received message" section instead: paste the text, then choose "Decrypt" or "Decrypt and save as a file".</p>
+      <p><strong>Received as an attachment:</strong> save it to Files first, then tap the <strong>down-arrow</strong> icon at the top of the Filescrypt screen to import it. The file joins the vault list, where all actions become available.</p>
+      <p><strong>Received as text in the body of an email:</strong> copy the text, then in the "Read a received message" section, tap "Paste". Next choose "Decrypt message" if it's text, or "Decrypt a file or photos" otherwise.</p>
+    </details>
+
+    <details>
+      <summary>Can I view a photo without saving it?</summary>
+      <p>Yes. The <strong>eye</strong> icon next to a file in the vault opens a preview of the decrypted content right inside the app. Photos, PDFs and text files are displayed without ever being written to the device: the content lives only in memory and disappears as soon as you close it.</p>
+      <ul>
+        <li>Pinch to zoom into an image, double-tap to return to the full view.</li>
+        <li>A batch of photos opens as a list: tap an item to view it on its own.</li>
+        <li>The preview blurs automatically as soon as the app goes to the background, so it doesn't show up in the app switcher.</li>
+      </ul>
+      <p>The <strong>Save</strong> button is the only way to get a plain copy onto the device.</p>
+      <div class="warn">
+        <strong>Worth knowing:</strong> iOS does not let any app prevent screenshots. If one is taken during a preview, the image ends up unencrypted in your photo library — Filescrypt warns you, but cannot prevent it.
+      </div>
     </details>
 
     <details>
