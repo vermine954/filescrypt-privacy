@@ -213,6 +213,26 @@
     </details>
 
     <details>
+      <summary>Comment signer un document PDF ?</summary>
+      <p>Dans l'onglet <strong>Signatures</strong>, choisissez le PDF, puis renseignez votre nom (obligatoire), le lieu — prérempli d'après la position de l'appareil, modifiable — et, si vous le souhaitez, un logo d'entreprise. Vous fixez aussi le nombre total de signataires prévus.</p>
+      <p>Touchez ensuite le document à l'endroit où le tampon doit apparaître : un rectangle en montre la taille réelle, pour qu'il ne recouvre pas de texte. Une authentification Face ID ou Touch ID confirme la signature.</p>
+      <p>Le tampon est <strong>fusionné dans la page</strong> : il ne peut pas être sélectionné ni effacé dans un lecteur PDF.</p>
+    </details>
+
+    <details>
+      <summary>Comment faire signer plusieurs personnes ?</summary>
+      <p>Le nombre de signataires est fixé à la première signature. Transmettez ensuite le document signé : chaque personne l'ouvre dans son propre Filescrypt, ajoute sa signature à l'endroit qu'elle choisit, et le renvoie.</p>
+      <p>Chaque signature engage cryptographiquement celles qui la précèdent, ce qui rend l'ordre infalsifiable. Une même personne ne peut pas signer deux fois, et aucune signature n'est acceptée au-delà du nombre prévu.</p>
+    </details>
+
+    <details>
+      <summary>Comment vérifier l'authenticité d'un document signé ?</summary>
+      <p>Ouvrez le PDF dans l'onglet <strong>Signatures</strong>. L'app reconnaît les signatures et indique si elles sont authentiques, si la chaîne est intacte, et si le texte du document est resté identique depuis la signature. Le détail de chaque signataire s'affiche ensuite : nom, lieu, date, identifiant de clé et page du tampon.</p>
+      <p>Comparez cet <strong>identifiant</strong> avec celui que le signataire vous a communiqué par un autre canal : c'est ce qui confirme que la signature vient bien de lui.</p>
+      <p>La vérification ne détecte pas une modification purement graphique (image remplacée, élément dessiné). Un document dont la vérification échoue ne peut pas être contresigné.</p>
+    </details>
+
+    <details>
       <summary>Mes données sont-elles envoyées quelque part ?</summary>
       <p>Non. Filescrypt n'utilise aucun serveur, ne crée aucun compte et ne transmet rien sur le réseau. Tout le chiffrement se fait sur l'appareil.</p>
       <p>Seule exception : si vous utilisez la <strong>dictée vocale</strong>, l'audio peut être traité par le service de reconnaissance vocale d'Apple, comme pour n'importe quelle dictée sur iOS. Écrivez au clavier si vous préférez l'éviter.</p>
@@ -313,6 +333,26 @@
     <details>
       <summary>What is the identifier shown under my key?</summary>
       <p>It's a short fingerprint derived from your public key. It lets you confirm with your correspondent — out loud, by phone or through another channel — that the key they received is genuinely yours and not a third party's.</p>
+    </details>
+
+    <details>
+      <summary>How do I sign a PDF document?</summary>
+      <p>In the <strong>Signatures</strong> tab, choose the PDF, then enter your name (required), the place — prefilled from the device's location, editable — and, if you wish, a company logo. You also set the total number of expected signers.</p>
+      <p>Then tap the document where the stamp should appear: a rectangle shows its actual size, so it won't cover any text. A Face ID or Touch ID prompt confirms the signature.</p>
+      <p>The stamp is <strong>fused into the page</strong>: it can't be selected or erased in a PDF reader.</p>
+    </details>
+
+    <details>
+      <summary>How do I have several people sign?</summary>
+      <p>The number of signers is set at the first signature. Then pass the signed document on: each person opens it in their own Filescrypt, adds their signature wherever they choose, and sends it back.</p>
+      <p>Each signature cryptographically commits the ones before it, making the order tamper-proof. The same person can't sign twice, and no signature is accepted beyond the planned number.</p>
+    </details>
+
+    <details>
+      <summary>How do I verify a signed document?</summary>
+      <p>Open the PDF in the <strong>Signatures</strong> tab. The app recognises the signatures and shows whether they're authentic, whether the chain is intact, and whether the document's text is unchanged since signing. The details of each signer are then listed: name, place, date, key identifier and stamp page.</p>
+      <p>Compare that <strong>identifier</strong> with the one the signer gave you through another channel: that's what confirms the signature really came from them.</p>
+      <p>Verification doesn't detect purely graphical changes (a replaced image, a drawn element). A document that fails verification can't be countersigned.</p>
     </details>
 
     <details>
