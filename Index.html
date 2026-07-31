@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filescrypt — Politique de confidentialité / Privacy Policy</title>
+<style>
+  :root {
+    --blue: #3b6fed;
+    --purple: #9147e6;
+    --pink: #ea4fa0;
+    --ink: #1a1a1c;
+    --muted: #6b6b73;
+    --bg: #f5f5f7;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    padding: 32px 20px 64px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  header { text-align: center; margin-bottom: 36px; }
+  .badge {
+    width: 74px; height: 74px; margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue), var(--purple) 55%, var(--pink));
+    display: flex; align-items: center; justify-content: center;
+  }
+  .badge svg { width: 36px; height: 36px; }
+  h1 { font-size: 30px; letter-spacing: -0.5px; }
+  .sub { color: var(--muted); font-size: 15px; margin-top: 6px; }
+
+  .lang-nav { text-align: center; margin: 22px 0 40px; }
+  .lang-nav a {
+    display: inline-block; margin: 0 6px; padding: 8px 18px;
+    border-radius: 999px; text-decoration: none;
+    background: var(--card); color: var(--blue);
+    font-size: 14px; font-weight: 600;
+    border: 1px solid #e3e3e8;
+  }
+
+  section.doc { margin-bottom: 56px; }
+  h2 {
+    font-size: 22px; margin: 34px 0 10px;
+    padding-bottom: 8px; border-bottom: 2px solid #e8e8ee;
+  }
+  h3 { font-size: 16px; margin: 22px 0 6px; }
+  p, li { font-size: 15px; color: #303038; }
+  ul { margin: 8px 0 8px 22px; }
+  li { margin-bottom: 6px; }
+
+  .callout {
+    background: var(--card);
+    border-left: 4px solid var(--purple);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 18px 0;
+  }
+  .callout strong { color: var(--purple); }
+
+  footer {
+    text-align: center; color: var(--muted);
+    font-size: 13px; margin-top: 48px;
+    padding-top: 22px; border-top: 1px solid #e3e3e8;
+  }
+  a { color: var(--blue); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="10" width="16" height="10" rx="2"></rect>
+        <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+      </svg>
+    </div>
+    <h1>Filescrypt</h1>
+    <p class="sub">Politique de confidentialité · Privacy Policy</p>
+    <p class="sub">Dernière mise à jour / Last updated: 30 July 2026</p>
+  </header>
+
+  <nav class="lang-nav">
+    <a href="#fr">Français</a>
+    <a href="#en">English</a>
+  </nav>
+
+  <!-- ============ FRANÇAIS ============ -->
+  <section class="doc" id="fr">
+    <h2>Politique de confidentialité</h2>
+
+    <div class="callout">
+      <p><strong>En résumé :</strong> Filescrypt ne collecte aucune donnée personnelle, n'utilise aucun serveur et ne transmet rien sur le réseau. Il n'y a ni compte, ni inscription, ni suivi publicitaire. Tout se passe sur votre appareil.</p>
+    </div>
+
+    <h3>Aucune collecte de données</h3>
+    <p>Filescrypt ne collecte, ne stocke et ne transmet aucune donnée personnelle. Le développeur n'a accès à aucune information vous concernant, ni à vos fichiers, ni à vos messages, ni à vos clés de chiffrement.</p>
+    <p>L'app ne contient aucun outil d'analyse, aucun traceur, aucune publicité et aucun kit de développement tiers.</p>
+
+    <h3>Où sont vos données</h3>
+    <ul>
+      <li><strong>Clé privée classique :</strong> générée et conservée dans le Secure Enclave de votre appareil. Elle ne peut pas en être extraite, ni par vous, ni par le développeur, ni par Apple.</li>
+      <li><strong>Clé privée post-quantique :</strong> conservée dans le trousseau chiffré de votre appareil, protégée par votre authentification biométrique.</li>
+      <li><strong>Fichiers chiffrés :</strong> stockés localement dans l'espace privé de l'app sur votre appareil.</li>
+      <li><strong>Clés publiques de vos contacts :</strong> enregistrées localement dans l'app. Elles ne sont ni synchronisées ni transmises.</li>
+      <li><strong>Clés de signature :</strong> une paire dédiée à la signature de documents, distincte de celle du chiffrement. La clé classique est enfermée dans le Secure Enclave, la clé post-quantique dans le trousseau chiffré, protégée par votre biométrie.</li>
+      <li><strong>Logos d'entreprise :</strong> les images que vous ajoutez pour vos tampons de signature sont enregistrées localement dans l'espace privé de l'app.</li>
+    </ul>
+    <p>Aucun de ces éléments n'est envoyé vers un serveur, quel qu'il soit.</p>
+
+    <h3>Autorisations demandées par l'app</h3>
+    <ul>
+      <li><strong>Face ID / Touch ID :</strong> utilisé pour autoriser le déchiffrement et le verrouillage automatique. Vos données biométriques restent gérées par le système et ne sont jamais accessibles à l'app.</li>
+      <li><strong>Photothèque :</strong> requise uniquement lorsque vous choisissez vous-même des photos à chiffrer. L'app n'accède à aucune autre photo.</li>
+      <li><strong>Fichiers :</strong> accès aux seuls fichiers que vous sélectionnez explicitement.</li>
+      <li><strong>Micro et reconnaissance vocale :</strong> utilisés uniquement lorsque vous activez la dictée pour composer un message.</li>
+      <li><strong>Localisation :</strong> utilisée uniquement pour préremplir le lieu de signature d'un document, au niveau de la ville et du pays. La position n'est demandée qu'au moment de signer, jamais en arrière-plan, et vous pouvez refuser cette autorisation ou corriger librement le lieu proposé.</li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>À noter concernant la dictée :</strong> la fonction de dictée s'appuie sur le service de reconnaissance vocale d'Apple. Selon votre appareil et vos réglages, l'audio peut être traité sur les serveurs d'Apple pour être converti en texte. Ce traitement relève de la politique de confidentialité d'Apple, et non de Filescrypt. Si vous préférez qu'aucun contenu vocal ne quitte votre appareil, saisissez vos messages au clavier plutôt que par la dictée.</p>
+    </div>
+
+    <h3>Signature de documents PDF</h3>
+    <p>La signature d'un document se fait entièrement sur votre appareil. Le PDF n'est jamais envoyé nulle part : ni au développeur, ni à un service de signature, ni à un quelconque serveur. La vérification d'un document reçu est également locale et fonctionne sans connexion.</p>
+    <p>Un document signé porte, de façon visible et permanente, les informations que vous avez fournies :</p>
+    <ul>
+      <li>le nom que vous avez saisi ;</li>
+      <li>le lieu, si vous en avez indiqué un ;</li>
+      <li>la date et l'heure de la signature ;</li>
+      <li>l'identifiant public de votre clé de signature.</li>
+    </ul>
+    <p>Ces informations sont inscrites dans le document lui-même. Toute personne qui recevra ce document pourra donc les lire. Vous restez libre de laisser le lieu vide, et le nom saisi n'a pas à être votre nom légal.</p>
+    <div class="callout">
+      <p><strong>À noter concernant le lieu :</strong> la mention du lieu est déclarative. Elle est préremplie d'après la position de l'appareil, mais reste modifiable et n'est pas vérifiable cryptographiquement. Elle ne constitue donc pas une preuve de l'endroit où le document a été signé.</p>
+    </div>
+    <p>Lorsque plusieurs personnes signent un même document, chacune ajoute ses propres informations en le transmettant à la suivante. Chaque signataire voit les informations de ceux qui l'ont précédé.</p>
+
+    <h3>Partage de contenu chiffré</h3>
+    <p>Lorsque vous partagez un fichier chiffré ou une clé publique par courriel, par la feuille de partage ou par le presse-papiers, le contenu est transmis à l'application que vous choisissez (Mail, Messages, Fichiers, etc.). Ce transfert est régi par la politique de confidentialité de cette application et de votre fournisseur de service. Filescrypt n'intervient pas dans cet acheminement et n'en conserve aucune trace.</p>
+
+    <h3>Sauvegardes</h3>
+    <p>Les clés privées ne sont jamais incluses dans les sauvegardes iCloud ou iTunes : c'est une protection du Secure Enclave, et elle est volontaire. Un fichier chiffré restauré sur un nouvel appareil ne pourra donc plus être déchiffré. Conservez toujours une copie de vos données importantes ailleurs.</p>
+
+    <h3>Enfants</h3>
+    <p>Filescrypt ne collecte aucune donnée, et donc aucune donnée concernant des enfants.</p>
+
+    <h3>Modifications</h3>
+    <p>Toute modification de cette politique sera publiée sur cette page, avec une date de mise à jour actualisée.</p>
+
+    <h3>Contact</h3>
+    <p>Pour toute question : <a href="mailto:support@filescrypt.com">support@filescrypt.com</a></p>
+  </section>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="doc" id="en">
+    <h2>Privacy Policy</h2>
+
+    <div class="callout">
+      <p><strong>In short:</strong> Filescrypt collects no personal data, uses no server and transmits nothing over the network. There is no account, no sign-up and no advertising tracking. Everything happens on your device.</p>
+    </div>
+
+    <h3>No data collection</h3>
+    <p>Filescrypt does not collect, store or transmit any personal data. The developer has no access to any information about you, nor to your files, your messages or your encryption keys.</p>
+    <p>The app contains no analytics, no trackers, no advertising and no third-party SDKs.</p>
+
+    <h3>Where your data lives</h3>
+    <ul>
+      <li><strong>Classical private key:</strong> generated and kept inside your device's Secure Enclave. It cannot be extracted — not by you, not by the developer, not by Apple.</li>
+      <li><strong>Post-quantum private key:</strong> kept in your device's encrypted keychain, protected by your biometric authentication.</li>
+      <li><strong>Encrypted files:</strong> stored locally in the app's private container on your device.</li>
+      <li><strong>Your contacts' public keys:</strong> saved locally in the app. They are neither synced nor transmitted.</li>
+      <li><strong>Signing keys:</strong> a dedicated key pair for document signing, separate from the encryption one. The classical key is locked inside the Secure Enclave, the post-quantum key in the encrypted keychain, protected by your biometrics.</li>
+      <li><strong>Company logos:</strong> images you add for your signature stamps are stored locally in the app's private space.</li>
+    </ul>
+    <p>None of this is ever sent to any server.</p>
+
+    <h3>Permissions the app requests</h3>
+    <ul>
+      <li><strong>Face ID / Touch ID:</strong> used to authorise decryption and auto-lock. Your biometric data is handled entirely by the system and is never accessible to the app.</li>
+      <li><strong>Photo library:</strong> requested only when you choose photos to encrypt yourself. The app accesses no other photos.</li>
+      <li><strong>Files:</strong> access is limited to the files you explicitly select.</li>
+      <li><strong>Microphone and speech recognition:</strong> used only when you turn on dictation to compose a message.</li>
+      <li><strong>Location:</strong> used only to prefill the place of signature on a document, at city and country level. Location is requested only when signing, never in the background, and you may decline this permission or freely edit the suggested place.</li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>Note about dictation:</strong> the dictation feature relies on Apple's speech recognition service. Depending on your device and settings, audio may be processed on Apple's servers to be converted into text. That processing is governed by Apple's privacy policy, not by Filescrypt. If you prefer that no voice content leaves your device, type your messages instead of dictating them.</p>
+    </div>
+
+    <h3>PDF document signing</h3>
+    <p>Signing a document happens entirely on your device. The PDF is never sent anywhere: not to the developer, not to a signing service, not to any server. Verifying a document you receive is likewise local and works without a connection.</p>
+    <p>A signed document visibly and permanently carries the information you provided:</p>
+    <ul>
+      <li>the name you entered;</li>
+      <li>the place, if you supplied one;</li>
+      <li>the date and time of signing;</li>
+      <li>the public identifier of your signing key.</li>
+    </ul>
+    <p>This information is written into the document itself. Anyone who receives that document will therefore be able to read it. You remain free to leave the place blank, and the name you enter need not be your legal name.</p>
+    <div class="callout">
+      <p><strong>Note about the place:</strong> the place is declarative. It is prefilled from the device's location but remains editable and is not cryptographically verifiable. It is therefore not proof of where the document was signed.</p>
+    </div>
+    <p>When several people sign the same document, each adds their own information as it is passed along. Every signer can see the information of those who signed before them.</p>
+
+    <h3>Sharing encrypted content</h3>
+    <p>When you share an encrypted file or a public key by email, through the share sheet or via the clipboard, the content is handed to the app you choose (Mail, Messages, Files, and so on). That transfer is governed by the privacy policy of that app and of your service provider. Filescrypt plays no part in the delivery and keeps no record of it.</p>
+
+    <h3>Backups</h3>
+    <p>Private keys are never included in iCloud or iTunes backups: this is a deliberate protection of the Secure Enclave. An encrypted file restored on a new device can therefore no longer be decrypted. Always keep a copy of important data elsewhere.</p>
+
+    <h3>Children</h3>
+    <p>Filescrypt collects no data, and therefore no data concerning children.</p>
+
+    <h3>Changes</h3>
+    <p>Any change to this policy will be published on this page, with an updated revision date.</p>
+
+    <h3>Contact</h3>
+    <p>For any question: <a href="mailto:support@filescrypt.com">support@filescrypt.com</a></p>
+  </section>
+
+  <footer>
+    Filescrypt · support@filescrypt.com
+  </footer>
+
+</div>
+</body>
+</html>
